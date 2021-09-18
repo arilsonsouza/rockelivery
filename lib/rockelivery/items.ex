@@ -14,11 +14,9 @@ defmodule Rockelivery.Items do
   end
 
   def by_id(item_uuid) do
-    with %Item{} = item <- Repo.get(Item, item_uuid) do
-      {:ok, item}
-    else
+    case Repo.get(Item, item_uuid) do
+      %Item{} = item -> {:ok, item}
       nil -> {:error, Error.build(:not_found, "Item not found.")}
-      :error -> {:error, Error.bad_request()}
     end
   end
 

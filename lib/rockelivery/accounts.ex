@@ -20,11 +20,9 @@ defmodule Rockelivery.Accounts do
   end
 
   def user_by_id(user_uuid) do
-    with %User{} = user <- Repo.get(User, user_uuid) do
-      {:ok, user}
-    else
+    case Repo.get(User, user_uuid) do
+      %User{} = user -> {:ok, user}
       nil -> {:error, Error.user_not_found()}
-      :error -> {:error, Error.bad_request()}
     end
   end
 

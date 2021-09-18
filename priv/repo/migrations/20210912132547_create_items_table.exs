@@ -13,6 +13,5 @@ defmodule Rockelivery.Repo.Migrations.CreateItemsTable do
   end
 
   def down do
-
   end
 end
