@@ -1,4 +1,5 @@
 defmodule Rockelivery.Items.Item do
+  @moduledoc false
   use Rockelivery.Schema
 
   @fields [:category, :description, :price, :photo]

@@ -1,4 +1,6 @@
 defmodule Rockelivery.Orders do
+  @moduledoc false
+
   import Ecto.Query
 
   alias Rockelivery.Repo

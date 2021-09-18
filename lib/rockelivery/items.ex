@@ -1,4 +1,5 @@
 defmodule Rockelivery.Items do
+  @moduledoc false
   alias Rockelivery.Repo
   alias Rockelivery.Error
   alias Rockelivery.Items.Item

@@ -1,4 +1,5 @@
 defmodule Rockelivery.Orders.Order do
+  @moduledoc false
   use Rockelivery.Schema
 
   @fields [:user_id, :address, :comments, :payment_type]

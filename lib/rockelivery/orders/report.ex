@@ -1,4 +1,5 @@
 defmodule Rockelivery.Orders.Report do
+  @moduledoc false
   import Ecto.Query
   alias Rockelivery.{Repo, Orders.Order, Items.Item}
 

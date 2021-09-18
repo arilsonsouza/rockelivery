@@ -1,4 +1,5 @@
 defmodule Rockelivery.ViaCep.Client do
+  @moduledoc false
   use Tesla, only: ~w(get)a
 
   alias Rockelivery.Error

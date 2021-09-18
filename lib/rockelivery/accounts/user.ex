@@ -1,4 +1,5 @@
 defmodule Rockelivery.Accounts.User do
+  @moduledoc false
   use Rockelivery.Schema
 
   @virtual_fields [:password]

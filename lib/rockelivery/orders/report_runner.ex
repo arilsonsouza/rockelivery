@@ -1,4 +1,5 @@
 defmodule Rockelivery.Orders.ReportRunner do
+  @moduledoc false
   use GenServer
 
   require Logger

@@ -1,4 +1,5 @@
 defmodule Rockelivery.Factory do
+  @moduledoc false
   use ExMachina.Ecto, repo: Rockelivery.Repo
 
   alias Rockelivery.Accounts.User
